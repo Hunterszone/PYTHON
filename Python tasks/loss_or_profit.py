@@ -9,5 +9,5 @@ def money(income, outcome):
     return result
     
  
-print(money([10], [10]))
+print(money([20], [10]))
     

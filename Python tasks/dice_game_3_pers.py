@@ -20,7 +20,15 @@ print(str(player_three) + " throws: " + str(points_pl_three))
  
 if points_pl_one > points_pl_two and points_pl_one > points_pl_three:
     print(str(player_one) + " wins")
+    if points_pl_two == points_pl_three:
+        print("Equal score between " + str(player_two) + " and " + str(player_three))
 elif points_pl_one < points_pl_two and points_pl_two > points_pl_three:
     print(str(player_two) + " wins")
-else:
+    if points_pl_one == points_pl_three:
+        print("Equal score between " + str(player_one) + " and " + str(player_three))
+elif points_pl_three > points_pl_two and points_pl_three > points_pl_one:
     print(str(player_three) + " wins")
+    if points_pl_two == points_pl_one:
+        print("Equal score between " + str(player_one) + " and " + str(player_two))
+else:
+    print("Equal score!")

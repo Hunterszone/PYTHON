@@ -17,4 +17,4 @@ def fact_digits(number):
     
     return sum_fact
  
-print("Sum_factorial of digits in number: " + str(fact_digits(13)))
+print("Sum_factorial of digits in number: " + str(fact_digits(15)))

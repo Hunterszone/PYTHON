@@ -8,9 +8,9 @@ def on_budget(books, budget):
              }
     
     for book in books:
-        if sum_ > book:
+        if sum_ > book or book == 0:
             result["books_on_budget"] += 1
-            sum_ -= book
+            sum_ -= book       
     if budget >= sum_books :
         return result
     elif budget  < sum_books:
@@ -19,7 +19,4 @@ def on_budget(books, budget):
  
  
  
-books = [0, 10, 100, 5, 3, 8, 25]
-budget = 35
- 
-print(on_budget(books, budget))
+print(on_budget([0, 0, 0], 10))

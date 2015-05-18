@@ -37,7 +37,7 @@ fieldset {
  
 <head>
 <body background="http://i.picresize.com/images/2015/04/28/iO4N.jpg"></body>
-</div>
+
  
 <br><br><br><br><form id='register' action='file:///C:/Users/bgdrek01/Desktop/Piece%20of%20art.html' method='post'
     accept-charset='UTF-8'>
@@ -45,7 +45,7 @@ fieldset {
  
 <fieldset><center>
  
-<legend><font face="algerian"><font size="4"><font color="yellow"><u>Enter your details:</u></font></font></font></legend>
+<legend><font face="algerian"><font size="4"><font color="yellow"><u>Enter your credentials:</u></font></font></font></legend>
  
 <p><br><font face="verdana"><font size="3"><font color="white">Username:</font></font></font></br></p>
 <p><input type="text" required pattern="\w+" name="username"></p>
@@ -64,7 +64,7 @@ fieldset {
 <br><br>
 <input type='submit' name='Register now' value='Sign in now' />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
  
-<input type="hidden"><input type="reset" value="Empty form" name="submit">
+<input type="hidden"><input type="reset" value="Clear form" name="submit">
  
  
 </center></fieldset>

@@ -1,0 +1,274 @@
+<form name="reg" action="code_exec.php" onsubmit="return validateForm()" method="post">
+<table width="274" border="0" align="center" cellpadding="2" cellspacing="0">
+  <tr>
+    <td colspan="2">
+		<div align="center">
+		  <?php 
+		$remarks=$_GET['remarks'];
+		if ($remarks==null and $remarks=="")
+		{
+		echo 'Register Here';
+		}
+		if ($remarks=='success')
+		{
+		echo 'Registration Success';
+		}
+		?>	
+	    </div></td>
+ 
+ 
+<STYLE TYPE="text/css">
+ 
+fieldset {
+    display: block;
+    margin-left: 315px;
+    margin-right: 315px;
+    padding-top: 1em;
+    padding-bottom: 0em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: 8px groove (internal value);
+    background-color: rgba(0,0,0,0.5);
+    
+} 
+</STYLE>
+ 
+ 
+ 
+ 
+<style type="text/css">
+ 
+  input:required:invalid, input:focus:invalid {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAeVJREFUeNqkU01oE1EQ/mazSTdRmqSxLVSJVKU9RYoHD8WfHr16kh5EFA8eSy6hXrwUPBSKZ6E9V1CU4tGf0DZWDEQrGkhprRDbCvlpavan3ezu+LLSUnADLZnHwHvzmJlvvpkhZkY7IqFNaTuAfPhhP/8Uo87SGSaDsP27hgYM/lUpy6lHdqsAtM+BPfvqKp3ufYKwcgmWCug6oKmrrG3PoaqngWjdd/922hOBs5C/jJA6x7AiUt8VYVUAVQXXShfIqCYRMZO8/N1N+B8H1sOUwivpSUSVCJ2MAjtVwBAIdv+AQkHQqbOgc+fBvorjyQENDcch16/BtkQdAlC4E6jrYHGgGU18Io3gmhzJuwub6/fQJYNi/YBpCifhbDaAPXFvCBVxXbvfbNGFeN8DkjogWAd8DljV3KRutcEAeHMN/HXZ4p9bhncJHCyhNx52R0Kv/XNuQvYBnM+CP7xddXL5KaJw0TMAF8qjnMvegeK/SLHubhpKDKIrJDlvXoMX3y9xcSMZyBQ+tpyk5hzsa2Ns7LGdfWdbL6fZvHn92d7dgROH/730YBLtiZmEdGPkFnhX4kxmjVe2xgPfCtrRd6GHRtEh9zsL8xVe+pwSzj+OtwvletZZ/wLeKD71L+ZeHHWZ/gowABkp7AwwnEjFAAAAAElFTkSuQmCC);
+    background-position: right top;
+    background-repeat: no-repeat;
+    -moz-box-shadow: none;
+  }
+  input:required:valid {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAepJREFUeNrEk79PFEEUx9/uDDd7v/AAQQnEQokmJCRGwc7/QeM/YGVxsZJQYI/EhCChICYmUJigNBSGzobQaI5SaYRw6imne0d2D/bYmZ3dGd+YQKEHYiyc5GUyb3Y+77vfeWNpreFfhvXfAWAAJtbKi7dff1rWK9vPHx3mThP2Iaipk5EzTg8Qmru38H7izmkFHAF4WH1R52654PR0Oamzj2dKxYt/Bbg1OPZuY3d9aU82VGem/5LtnJscLxWzfzRxaWNqWJP0XUadIbSzu5DuvUJpzq7sfYBKsP1GJeLB+PWpt8cCXm4+2+zLXx4guKiLXWA2Nc5ChOuacMEPv20FkT+dIawyenVi5VcAbcigWzXLeNiDRCdwId0LFm5IUMBIBgrp8wOEsFlfeCGm23/zoBZWn9a4C314A1nCoM1OAVccuGyCkPs/P+pIdVIOkG9pIh6YlyqCrwhRKD3GygK9PUBImIQQxRi4b2O+JcCLg8+e8NZiLVEygwCrWpYF0jQJziYU/ho2TUuCPTn8hHcQNuZy1/94sAMOzQHDeqaij7Cd8Dt8CatGhX3iWxgtFW/m29pnUjR7TSQcRCIAVW1FSr6KAVYdi+5Pj8yunviYHq7f72po3Y9dbi7CxzDO1+duzCXH9cEPAQYAhJELY/AqBtwAAAAASUVORK5CYII=);
+    background-position: right top;
+    background-repeat: no-repeat;
+  }
+ 
+</style>
+ 
+ 
+ 
+ 
+<head>
+<body background="http://i.picresize.com/images/2015/04/28/iO4N.jpg"></body></div>
+ 
+ 
+<br><br><br><br><form id='register' action='file:///C:/Users/bgdrek01/Desktop/Piece%20of%20art.html' method='post'
+    accept-charset='UTF-8'>
+ 
+<fieldset><center>
+ 
+<br><legend><font face="algerian"><font size="4"><font color="yellow"><u>Register yourself:</u></font></font></font></legend>
+<input type='hidden' name='submitted' id='submitted' value='1'/>
+ 
+<p><br><label for='name'><font face="verdana"><font size="3"><font color="white">First name*:</font></font></font></label><br></p>
+<input type='text' name='firstname' id='firstname' maxlength="70" / required>
+ 
+<p><label for='name'><font face="verdana"><font size="3"><font color="white">Last name:</font></font></font></label></p>
+<input type='text' name='lastname' id='lastname' maxlength="70" />
+ 
+<p><label for='email'><font face="verdana"><font size="3"><font color="white">Email address*:</font></font></font></label></p>
+<p><input type="email" name="email" ng-model="email" required></p>
+ 
+<p><p><font face="verdana"><font size="3"><font color="white">Username*:</font></font></font></p></p>
+<p><input type="text" required pattern="\w+" name="username"></p>
+ 
+<p><font face="verdana"><font size="3"><font color="white">Password*:</font></font></font></p>
+<p><input type="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" name="pwd1" onchange="form.pwd2.pattern = this.value;"></p>
+ 
+<p><font face="verdana"><font size="3"><font color="white">Confirm Password*:</font></font></font></p>
+<p><input type="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" name="pwd2"></p>
+ 
+<br><p> 
+         <label><font face="verdana"><font size="3"><font color="white">Date of Birth:</font></font></font></label>
+         <select name="month" onChange="changeDate(this.options[selectedIndex].value);">
+         <option value="na">Month</option>
+         <option value="1">January</option>
+         <option value="2">February</option>
+         <option value="3">March</option>
+         <option value="4">April</option>
+         <option value="5">May</option>
+         <option value="6">June</option>
+         <option value="7">July</option>
+         <option value="8">August</option>
+         <option value="9">September</option> 
+         <option value="10">October</option>
+         <option value="11">November</option>
+         <option value="12">December</option>
+         </select>
+         <select name="day" id="day">
+         <option value="na">Day</option>
+         </select>
+         <select name="year" id="year">
+         <option value="na">Year</option>
+         </select>
+         <script language="JavaScript" type="text/javascript">
+         function changeDate(i){
+         var e = document.getElementById('day');
+         while(e.length>0)
+         e.remove(e.length-1);
+         var j=-1;
+         if(i=="na")
+         k=0;
+         else if(i==2)
+         k=28;
+         else if(i==4||i==6||i==9||i==11)
+         k=30;
+         else
+         k=31;
+         while(j++<k){
+         var s=document.createElement('option');
+         var e=document.getElementById('day');
+         if(j==0){
+         s.text="Day";
+         s.value="na";
+         try{
+         e.add(s,null);}
+         catch(ex){
+         e.add(s);}}
+         else{
+         s.text=j;
+         s.value=j;
+         try{
+         e.add(s,null);}
+         catch(ex){
+         e.add(s);}}}}
+         y = 2016;
+         while (y-->1908){
+         var s = document.createElement('option');
+         var e = document.getElementById('year');
+         s.text=y;
+         s.value=y;
+         try{
+         e.add(s,null);}
+         catch(ex){
+         e.add(s);}}
+         </script> 
+    </p>
+    <p> 
+         <label><font face="verdana"><font size="3"><font color="white">Gender:</font></font></font></label>
+         <select name="Gender">
+         <option value="male">Male</option>
+         <option value="female">Female</option>
+         </select>
+    </p>
+ 
+<p><label for='age'><font face="verdana"><font size="3"><font color="white">Age:</font></font></font></label>
+<input type="number" size="6" name="age" min="18" max="99" value="18"></p></br>
+ 
+ 
+<center>
+
+<p><input id="field_terms" type="checkbox" required name="terms"><font face="algerian"><font size="2"><font color="yellow"> I accept the <a href="http://dir.bg" target="_blank"><u><font size="3"><font color="#00FFFF">Terms and Conditions</font></font></u></a></font></font></font></p>
+
+<br>
+ 
+<input type='submit' name='Register now' value='Register now' />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+ 
+<input type="hidden"><input type="reset" value="Empty form" name="submit">
+ 
+</p></center>
+ 
+</center</fieldset>
+</form></br></br></br></br>
+ 
+ 
+</body>
+</head>
+ 
+</form>
+
+
+<script type="text/javascript">
+
+  document.addEventListener("DOMContentLoaded", function() {
+
+    var myForm = document.getElementById("example4");
+    var checkForm = function(e) {
+      ...
+      if(!this.terms.checked) {
+        alert("Please indicate that you accept the Terms and Conditions");
+        this.terms.focus();
+        e.preventDefault(); // equivalent to return false
+        return;
+      }
+    };
+
+    // attach the form submit handler
+    myForm.addEventListener("submit", checkForm, true);
+
+    var myCheckbox = document.getElementById("field_terms");
+    var myCheckboxMsg = "Please indicate that you accept the Terms and Conditions";
+
+    // set the starting error message
+    myCheckbox.setCustomValidity(myCheckboxMsg);
+
+    // attach checkbox handler to toggle error message
+    myCheckbox.addEventListener("change", function() {
+      this.setCustomValidity(this.validity.valueMissing ? myCheckboxMsg : "");
+    }, false);
+
+  }, false);
+
+</script>
+ 
+ 
+<style type="text/css">
+ 
+input[type=submit] {
+    border-radius: 25px;
+    border: 2;
+    width: 110px;
+    height:25px;
+    font-family: Algerian;
+    background: #f4f4f4;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #f4f4f4 1%, #ededed 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #f4f4f4), color-stop(100%, #ededed));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #f4f4f4 1%, #ededed 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #f4f4f4 1%, #ededed 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #f4f4f4 1%, #ededed 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #f4f4f4 1%, #ededed 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f4f4f4', endColorstr='#ededed', GradientType=0);
+    /* IE6-9 */
+}
+ 
+ 
+ 
+input[type=reset] {
+    border-radius: 25px;
+    border: 2;
+    width: 105px;
+    height:25px;
+    font-family: Algerian;
+    background: #f4f4f4;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #f4f4f4 1%, #ededed 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #f4f4f4), color-stop(100%, #ededed));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #f4f4f4 1%, #ededed 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #f4f4f4 1%, #ededed 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #f4f4f4 1%, #ededed 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #f4f4f4 1%, #ededed 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f4f4f4', endColorstr='#ededed', GradientType=0);
+    /* IE6-9 */
+}
+ 
+</style>

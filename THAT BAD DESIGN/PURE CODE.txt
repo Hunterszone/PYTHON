@@ -94,9 +94,6 @@ h1 {
 
 
 
-
-
-
 <!-- CSS styles for standard search box -->
 
 <style type="text/css">
@@ -141,6 +138,7 @@ h1 {
 		background: rgba(255, 255, 255, 0.7);
 		background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.7)));
 		background: -moz-linear-gradient(top,  rgba(255, 255, 255, 0.7),  rgba(255, 255, 255, 0.7));
+	        background: -ms-linear-gradient(top,  rgba(255, 255, 255, 0.7),  rgba(255, 255, 255, 0.7));	
 	}
 	/* Fixes submit button height problem in Firefox */
 	.tfbutton::-moz-focus-inner {
@@ -165,7 +163,6 @@ height: 17px;
 
 
 </style> 
-
 
 
 
@@ -217,19 +214,11 @@ html, body {
 
 </style>
  
- 
- 
-
-
-
-
 
 
 
  
  
-
-
 <!-- CSS for NAVIGATION PANE -->
 
 
@@ -321,6 +310,7 @@ html, body {
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
  
 <style>
+
 .TheTextOff{
 color:rgba(255, 255, 255, 0.7);
 font-family:Arial, Helvetica, sans-serif;
@@ -345,6 +335,24 @@ h10 {
 
 
 
+
+<!-- CSS for SOURCES HEADERS -->
+
+<style type="text/css">
+
+h888 {
+
+    position: fixed;
+    width: 100%;
+}  
+
+</style>
+
+
+
+
+
+
 <!-- CSS for YELLOW SHADOWS -->
 
 <style type="text/css">
@@ -362,6 +370,37 @@ h2 {
 <!-- CSS for OUR PARTNERS block -->
 
 <style type="text/css">
+
+
+
+.slider:after {
+    font-size: 180%;
+    text-align: center;
+    padding: 25%;
+    content: 'click on a thumbnail';
+    color:#fff;
+    position:absolute;
+    width:100%; height:100%;
+    top:0; left:0;
+    background:rgba(0,0,0,0.7);
+    opacity:0;
+    text-stroke-width: 1px;    
+    -webkit-text-stroke-width: 1px;
+    -ms-text-stroke-width: 1px;
+    -moz-text-stroke-width: 1px;   
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; 
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+            
+}
+
+.slider:hover:after {
+    opacity:1;
+}
+
 
 .slider{
 	width: 640px; /*Same as width of the large image*/
@@ -397,7 +436,7 @@ h2 {
 	transition: all 0.5s;
 	
 	/*Default style = low opacity*/
-	opacity: 0.6;
+	opacity: 1;
 }
 
 .slider label img{
@@ -405,12 +444,13 @@ h2 {
 }
 
 
-/*Time to add the click effects*/
+/*Click effects*/
 .slider input[name='slide_switch']:checked+label {
 	border-color: #666;
 	opacity: 1;
 }
-/*Clicking any thumbnail now should change its opacity(style)*/
+
+/*Change opacity*/
 /*Time to work on the main images*/
 .slider input[name='slide_switch'] ~ img {
 	opacity: 0;
@@ -423,9 +463,7 @@ On click the images will be displayed at normal size to complete the effect
 	opacity: 1;
 	transform: scale(1);
 }
-/*Clicking on any thumbnail now should activate the image related to it*/
-
-/*We are done :)*/
+/*Clicking on any thumbnail activates the image related to it*/
 
 </style>
 
@@ -763,7 +801,7 @@ img:hover {
 
 
 
-<!-- HTML for FLASH, CLOCK, HEADING AND SEARCH ENGINE -->
+<!-- HTML for ANIMATION, CLOCK, HEADING AND SEARCH ENGINE -->
 
 
 
@@ -825,9 +863,7 @@ border="0" cellpadding="5"><tr><td><input type="checkbox" class="L1" name="sites
 <body>
 
  
-<section class="cd-fixed-background img-3" data-type="slider-item">
-	<!-- ... -->
-</section>
+<section class="cd-fixed-background img-3" data-type="slider-item"></section>
 
  
  
@@ -1100,22 +1136,27 @@ and click the player icon.
  
  
  
-<br><br><br><br><br><p style="background-color: rgba(255, 255, 255, 0.7)"><table style="width:100%">
+<br><br><br><br><br><p style="background-color: rgba(255, 255, 255, 0.7)"><table><h888>
+
 <tr><center>
+
+<hr>
  
-<td><marquee behavior="alternate" scrollamount="9" onmouseover="this.stop();" onmouseout="this.start();" width="380"><b><font 
+<td style="border-right:2px solid #000;height:50px"><marquee behavior="alternate" scrollamount="9" onmouseover="this.stop();" onmouseout="this.start();" width="620"><b><font 
  
 color="black"><font face="algerian"><i><font size="6">CODE 
  
 HTML</font></i></font></font></b></marquee></td>
+
  
-<td><marquee behavior="alternate" scrollamount="9" onmouseover="this.stop();" onmouseout="this.start();" width="700"><b><font 
+<td style="border-right:2px solid #000;height:50px"><marquee behavior="alternate" scrollamount="9" onmouseover="this.stop();" onmouseout="this.start();" width="620"><b><font 
  
 color="black"><font face="algerian"><i><font size="6">WHAT ABOUT CSS?
  
 </font></i></font></font></b></marquee></td>
+
  
-<td><marquee behavior="alternate" scrollamount="9" onmouseover="this.stop();" onmouseout="this.start();" width="700"><b><font 
+<td><marquee behavior="alternate" scrollamount="9" onmouseover="this.stop();" onmouseout="this.start();" width="620"><b><font 
  
 color="black"><font face="algerian"><i><font size="6">OR JS, HUH?!
  
@@ -1123,12 +1164,12 @@ color="black"><font face="algerian"><i><font size="6">OR JS, HUH?!
  
  
 </center></tr>
-</table></p>
+</h888></table></p>
  
  
 <p style="background-color: rgba(0,0,0,0.5)"><table style="width:122%">
 <tr>
- 
+
 <td>
  
 <font color="white"><font face="algerian"><i><font 
@@ -1177,26 +1218,30 @@ src="http://i.picresize.com/images/2015/04/04/4lPQX.jpg" /></a>&nbsp&nbsp&nbsp
 <a href="http://www.w3schools.com/html/" target="_blank"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="http://i.picresize.com/images/2015/04/04/4lPQX.jpg" /></a>
  
 </td>
- 
+
 </tr></table></p>
  
  
  
 <br><br><br>
-<p style="background-color: rgba(255, 255, 255, 0.7)"><table style="width:100%">
+<p style="background-color: rgba(255, 255, 255, 0.7)"><table><h888>
 <tr><center>
+
+<hr>
  
-<td><marquee behavior="alternate" scrollamount="9" onmouseover="this.stop();" onmouseout="this.start();" width="380"><b><font 
+<td style="border-right:2px solid #000;height:50px"><marquee behavior="alternate" scrollamount="9" onmouseover="this.stop();" onmouseout="this.start();" width="620"><b><font 
  
 color="black"><font face="algerian"><i><font size="6">jSon &
  
 jQuery</font></i></font></font></b></marquee></td>
  
-<td><marquee behavior="alternate" scrollamount="9" onmouseover="this.stop();" onmouseout="this.start();" width="700"><b><font 
+
+<td style="border-right:2px solid #000;height:50px"><marquee behavior="alternate" scrollamount="9" onmouseover="this.stop();" onmouseout="this.start();" width="620"><b><font 
  
 color="black"><font face="algerian"><i><font size="6">PHP & MySQL</font></i></font></font></b></marquee></td>
  
-<td><marquee behavior="alternate" scrollamount="9" onmouseover="this.stop();" onmouseout="this.start();" width="700"><b><font 
+
+<td><marquee behavior="alternate" scrollamount="9" onmouseover="this.stop();" onmouseout="this.start();" width="620"><b><font 
  
 color="black"><font face="algerian"><i><font size="6">EXTRAS & 
  
@@ -1204,7 +1249,7 @@ MORE..</font></i></font></font></b></marquee></td>
  
  
 </center></tr>
-</table></p>
+</h888></table></p>
  
  
 <p style="background-color: rgba(0,0,0,0.5)"><table style="width:122%">

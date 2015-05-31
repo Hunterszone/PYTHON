@@ -372,22 +372,19 @@ h2 {
 <style type="text/css">
 
 
-
+    
 .slider:after {
-    font-size: 180%;
+    font-size: 140%;
     text-align: center;
-    padding: 25%;
-    content: 'click on a thumbnail';
-    color:#fff;
+    color: white;
+    padding-top: 40px;
+    padding-left:  50px;
+    content: 'exploring' url(http://i.stack.imgur.com/KUdfa.png) 'thumbnails..';
     position:absolute;
     width:100%; height:100%;
     top:0; left:0;
-    background:rgba(0,0,0,0.7);
-    opacity:0;
-    text-stroke-width: 1px;    
-    -webkit-text-stroke-width: 1px;
-    -ms-text-stroke-width: 1px;
-    -moz-text-stroke-width: 1px;   
+    background:rgba(0,0,0,0.9);
+    opacity:0;   
     box-sizing:border-box;
     -moz-box-sizing:border-box; 
     transition: all 0.5s;
@@ -398,7 +395,8 @@ h2 {
 }
 
 .slider:hover:after {
-    opacity:1;
+    opacity:0.8;
+
 }
 
 
@@ -1060,33 +1058,33 @@ PARTNERS:</u></font></font></i></font></font></b></center></br></p></h2></div>
 
  
  
-<div class="slider">
-	<input type="radio" name="slide_switch" id="id1" checked="checked" />
+<div class="slider" style="cursor: hand;">
+	<input type="radio" name="slide_switch" id="id1" checked="checked" onclick="window.open('https://nodejs.org/')" />
 	<label for="id1">
 		<img src="http://blog.rivaliq.com/wp-content/uploads/2014/01/nodejs_0.png" width="100" height="51.9" />
 	</label>
 	<img src="http://blog.rivaliq.com/wp-content/uploads/2014/01/nodejs_0.png" width="640" height="320" />
  
 	<!--Lets show the second image by default on page load-->
-	<input type="radio" name="slide_switch" id="id2" />
+	<input type="radio" name="slide_switch" id="id2" onclick="window.open('https://angularjs.org/')" />
 	<label for="id2">
 		<img src="http://supnig.com/media/pictures/angularjs.png" width="100" height="51.9"/>
 	</label>
 	<img src="http://supnig.com/media/pictures/angularjs.png" width="640" height="320" />
 	
-	<input type="radio" name="slide_switch" id="id3"/>
+	<input type="radio" name="slide_switch" id="id3" onclick="window.open('https://wix.com/')" />
 	<label for="id3">
 		<img src="http://streetfightmagcom.b.presscdn.com/wp-content/uploads/9bc178_9737c4bcb5cd54861daa2377c139d60b.jpg" width="100" height="51.9" />
 	</label>
 	<img src="http://streetfightmagcom.b.presscdn.com/wp-content/uploads/9bc178_9737c4bcb5cd54861daa2377c139d60b.jpg" width="640" height="320" />
 	
-	<input type="radio" name="slide_switch" id="id4"/>
+	<input type="radio" name="slide_switch" id="id4" onclick="window.open('http://w3schools.com/')" />
 	<label for="id4">
 		<img src="http://mostlywebsites.net/wp-content/uploads/w3schools-logo.jpg" width="100" height="51.9" />
 	</label>
 	<img src="http://mostlywebsites.net/wp-content/uploads/w3schools-logo.jpg" width="640" height="320" />
 	
-	<input type="radio" name="slide_switch" id="id5"/>
+	<input type="radio" name="slide_switch" id="id5" onclick="window.open('https://weebly.com/')" />
 	<label for="id5">
 		<img src="http://www.spiderwebconnections.com/wp-content/uploads/2012/11/weebly.jpg" width="100" height="51.9" />
 	</label>
@@ -1378,7 +1376,7 @@ style="width:70px;height:70px"></span></a>
  
 <br><br><br><center><font size="5"><div 
  
-class="box" onclick="window.open('https://angularjs.org/')" onmouseenter="myEnterFunction()">Charms: <span id="demo2"></span></div></font></center></br>
+class="box" onclick="window.open('https://angularjs.org/')" onmouseenter="myEnterFunction()">Visited: <span id="demo2"></span></div></font></center></br>
  
 </td>
  
@@ -1402,9 +1400,36 @@ function myEnterFunction() {
  
 <br><br><br><center><font size="5"><div 
  
-class="box" onclick="window.open('https://angularjs.org/')" onmouseenter="myEnterFunction2()">Charms: <span id="demo1"></span></div></font></center></br>
+class="box" onclick="window.open('https://angularjs.org/')" onmouseenter="myEnterFunction2()">Visited: <span id="demo1"></span></div></font></center></br>
  
 </td>
+ 
+
+<script>
+
+var x1 = 0;
+var y = 0;
+var z = 0;
+
+function myEnterFunction2() {
+    document.getElementById("demo1").innerHTML = x1+=1;
+}
+
+
+</script>
+
+
+ 
+ 
+ 
+<td>
+ 
+<br><br><br><center><font size="5"><div 
+ 
+class="box" onclick="window.open('https://angularjs.org/')" onmouseenter="myEnterFunction3()">Visited: <span id="demo3"></span></div></font></center></br>
+ 
+</td>
+ 
  
  
 <script>
@@ -1415,30 +1440,6 @@ var z = 0;
 
 function myEnterFunction3() {
     document.getElementById("demo3").innerHTML = x2+=1;
-}
-
-
-</script> 
- 
- 
- 
-<td>
- 
-<br><br><br><center><font size="5"><div 
- 
-class="box" onclick="window.open('https://angularjs.org/')" onmouseenter="myEnterFunction3()">Charms: <span id="demo3"></span></div></font></center></br>
- 
-</td>
- 
- 
-<script>
-
-var x1 = 0;
-var y = 0;
-var z = 0;
-
-function myEnterFunction2() {
-    document.getElementById("demo1").innerHTML = x1+=1;
 }
 
 

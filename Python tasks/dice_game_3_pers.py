@@ -31,4 +31,4 @@ elif points_pl_three > points_pl_two and points_pl_three > points_pl_one:
     if points_pl_two == points_pl_one:
         print("Equal score between " + str(player_one) + " and " + str(player_two))
 else:
-    print("Equal score!")
+    print("Equal score between first two highest!")

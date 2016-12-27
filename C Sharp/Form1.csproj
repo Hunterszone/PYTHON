@@ -48,7 +48,7 @@ namespace ConsoleApplication4
         private void button2_Click(object sender, EventArgs e)
         {
             input += "2";
-            textBox.Text=textBox.Text + System.Convert.ToString(2);			
+            
 
         }
 

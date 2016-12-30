@@ -68,5 +68,26 @@ namespace WindowsFormsApplication1
         {
             WindowState = FormWindowState.Normal;
         }
+
+        private void biggerFontAToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            float currentSize;
+
+            currentSize = menuStrip1.Font.Size;
+            currentSize += 2.0F;
+            menuStrip1.Font = new Font(menuStrip1.Font.Name, currentSize,
+            menuStrip1.Font.Style, menuStrip1.Font.Unit);
+
+        }
+
+        private void smallerFontAToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            float currentSize;
+
+            currentSize = menuStrip1.Font.Size;
+            currentSize -= 2.0F;
+            menuStrip1.Font = new Font(menuStrip1.Font.Name, currentSize,
+            menuStrip1.Font.Style, menuStrip1.Font.Unit);
+        }
     }
 }

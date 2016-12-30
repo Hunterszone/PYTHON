@@ -89,5 +89,17 @@ namespace WindowsFormsApplication1
             menuStrip1.Font = new Font(menuStrip1.Font.Name, currentSize,
             menuStrip1.Font.Style, menuStrip1.Font.Unit);
         }
+
+        private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+            saveFileDialog1.Filter = "JPeg Image|*.jpg|Bitmap Image|*.bmp|Gif Image|*.gif|Word file|*.doc, *.docx";
+            saveFileDialog1.Title = "Save as";
+            saveFileDialog1.ShowDialog();
+
+            System.IO.FileStream fs =
+         (System.IO.FileStream)saveFileDialog1.OpenFile();
+
+        }
     }
 }

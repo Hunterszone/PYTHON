@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Imaging; 
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -202,7 +203,36 @@ namespace WindowsFormsApplication1
 
         private void printScreenToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Bitmap printscreen = new Bitmap(Screen.PrimaryScreen.Bounds.Width, Screen.PrimaryScreen.Bounds.Height);
 
+            Graphics graphics = Graphics.FromImage(printscreen as Image);
+
+            graphics.CopyFromScreen(0, 0, 0, 0, printscreen.Size);
+
+            string newPath = @"C:\printscreen";
+            System.IO.Directory.CreateDirectory(newPath);
+            printscreen.Save(@"C:\printscreen\printscreen.jpg", ImageFormat.Jpeg);
+            
+        }
+
+        private void enlargeFormToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            float currentSize;
+
+            currentSize = this.Font.Size;
+            currentSize += 2.0F;
+            this.Font = new Font(this.Font.Name, currentSize,
+            this.Font.Style, this.Font.Unit);
+        }
+
+        private void smallerFormToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            float currentSize;
+
+            currentSize = this.Font.Size;
+            currentSize -= 2.0F;
+            this.Font = new Font(this.Font.Name, currentSize,
+            this.Font.Style, this.Font.Unit);
         }
     }
 }

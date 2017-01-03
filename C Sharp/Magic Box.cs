@@ -10,7 +10,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing.Printing;
 using System.Globalization;
+using WMPLib;
+using System.Windows.Media;
+using System.Diagnostics;
 
+　
 namespace WindowsFormsApplication1
 {
     public partial class Form1 : Form
@@ -37,6 +41,7 @@ namespace WindowsFormsApplication1
             var FD = new System.Windows.Forms.OpenFileDialog();
             if (FD.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
+               
                 string fileToOpen = FD.FileName;
 
                 System.IO.FileInfo File = new System.IO.FileInfo(FD.FileName);
@@ -45,6 +50,7 @@ namespace WindowsFormsApplication1
 
                 System.IO.StreamReader reader = new System.IO.StreamReader(fileToOpen);
                 //etc
+
             }
         }
 
@@ -234,5 +240,45 @@ namespace WindowsFormsApplication1
             this.Font = new Font(this.Font.Name, currentSize,
             this.Font.Style, this.Font.Unit);
         }
+
+        private void rotateFormToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void youTubeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            ProcessStartInfo sInfo = new ProcessStartInfo("http://youtube.com/");
+            Process.Start(sInfo);
+
+        }
+
+        private void facebookToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ProcessStartInfo sInfo = new ProcessStartInfo("http://facebook.com/");
+            Process.Start(sInfo);
+        }
+
+        private void googleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ProcessStartInfo sInfo = new ProcessStartInfo("http://google.com/");
+            Process.Start(sInfo);
+        }
+
+        private void bingToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ProcessStartInfo sInfo = new ProcessStartInfo("http://bing.com");
+            Process.Start(sInfo);
+        }
+
+        private void onlineRadioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ProcessStartInfo sInfo = new ProcessStartInfo("http://www.partyviberadio.com/player/embed-auto/reggae.html");
+            Process.Start(sInfo);
+       
+        }
+
+       
     }
 }

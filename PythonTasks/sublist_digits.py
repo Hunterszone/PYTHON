@@ -8,7 +8,7 @@ def sublist(list_1, list_2):
         
         while index_list_1 < len(list_1):
             if list_1[index_list_1] == item:
-                result += [list_1[index_list_1]]
+                result += [item]
                 
             index_list_1 += 1
  
@@ -20,4 +20,4 @@ def sublist(list_1, list_2):
  
     return False
  
-print(sublist([3, 5, 6], [0, 0, 1, 2, 3, 5, 6]))
+print(sublist([1, 2, 3], [0, 0, 1, 2, 3, 5, 6]))

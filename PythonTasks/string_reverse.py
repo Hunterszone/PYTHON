@@ -13,4 +13,4 @@ def str_reverse(string):
         
     return result
     
-print(str_reverse("SOK"))
+print(str_reverse("JUICE"))

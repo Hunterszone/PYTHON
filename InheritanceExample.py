@@ -35,4 +35,3 @@ z = Cop("I have " , str(123), " stolen", " => go to jail!")
 print("Normal person says: ", x.Money())
 print("Frauder says: ", y.Fraud())
 print("The cop says: ", z.Jail())
-    

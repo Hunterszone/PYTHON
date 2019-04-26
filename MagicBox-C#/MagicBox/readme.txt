@@ -1,0 +1,3 @@
+"MagicBox" is a WinForm application, containing functionalities for easy Files & Folders management and some hidden features, which are waiting to be explored by the user...
+
+The file MagicBox_190517.zip contains an EXE for MagicBox.

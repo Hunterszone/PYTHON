@@ -1,2 +1,2 @@
-# CSharp
-CSharp projects
+# MagicBox
+WinForms application, containing functionalities for Files & Folders management + hidden features, waiting to be explored by the user...
